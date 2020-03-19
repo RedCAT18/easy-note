@@ -1,13 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 
-createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   :root {
     --greyColor: #A2A19E;
     --blackColor: #373630;
   }
   body {
     background-color: #f7f5f3;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--blackColor);
     padding: 50px 100px;
     margin: 0;
@@ -53,3 +53,5 @@ createGlobalStyle`
     }
   }
 `;
+
+export default GlobalStyle;

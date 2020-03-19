@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 
 import { ApolloProvider } from 'react-apollo';
 import client from './apollo';
+import GlobalStyle from './globalStyle';
 import App from './Components/App/';
-import './globalStyle';
 
 ReactDOM.render(
   <ApolloProvider client={client}>
+    <GlobalStyle />
     <App />
   </ApolloProvider>,
   document.getElementById('root')

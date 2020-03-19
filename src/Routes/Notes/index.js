@@ -1,2 +1,2 @@
-import Notes from './Notes';
-export default Notes;
+import NotesContainer from './Notes';
+export default NotesContainer;
